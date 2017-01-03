@@ -22,14 +22,14 @@
 #include "DHT.h"
 
 // WiFi parameters
-#define WLAN_SSID       "Strawhouse"
-//#define WLAN_PASS       "WLAN_PASS"  ** no password required
+#define WLAN_SSID       "YourSSID"
+#define WLAN_PASS       "YourPassword"
 
 // Adafruit IO
 #define AIO_SERVER      "io.adafruit.com"
 #define AIO_SERVERPORT  1883
-#define AIO_USERNAME    "rocketrob"
-#define AIO_KEY         "d4b0aa4ae08643938438a77f5a9015f9"
+#define AIO_USERNAME    "YourUsername"
+#define AIO_KEY         "yourAdafruitKey"
 
 // Configure DHT sensors 
     ///////////////////////////////////////////////////////////////
@@ -79,7 +79,7 @@ void setup() {
   Serial.print(F("Connecting to "));
   Serial.println(WLAN_SSID);
 
-  WiFi.begin(WLAN_SSID); //, WLAN_PASS) removed from parameter as Strawhouse does not have password
+  WiFi.begin(WLAN_SSID, WLAN_PASS); 
   while (WiFi.status() != WL_CONNECTED) { //while not connected print a dot every 1/2 sec ...
     delay(500);
     Serial.print(F("."));
