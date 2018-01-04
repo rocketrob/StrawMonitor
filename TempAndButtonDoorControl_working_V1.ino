@@ -1,5 +1,5 @@
 /***************************************************
-  Adafruit ESP8266 WiFi Sensor Module
+  Adafruit ESP8266 WiFi Sensor Module // ESP connection needs to be added back 
 
   All within MAIN LOOP:
   Continually monitor if over-ride button is pressed. Open if pressed & hold for 10 seconds.
